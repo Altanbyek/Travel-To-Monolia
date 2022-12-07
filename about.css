@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+body{
+    width: 100vw;
+    background: linear-gradient(to top, rgba(187, 205, 240, 0.5)50%,rgba(139, 181, 245, 0.5)50%) ;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: rgb(34, 36, 40);
+    position: relative;
+    
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family:Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.image{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+}
+.video{
+    position: absolute;
+    margin-left: 500px;
+}
+
+.form{
+    width: 550px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+    position: absolute;
+    left:30px;
+}

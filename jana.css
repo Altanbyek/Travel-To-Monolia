@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container{
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .swiper{
+    width: 80%;
+    height: fit-content;
+  }
+  .swiper-slide img{
+    width: 100%;
+    
+  } 
+  .swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #ffff;
+  
+  }
+  .swiper .swiper-pagination-bullet-active{
+    background: #ffff;
+  }
+  
+
+  .container{
+    display: flex;
+  
+  }
+  .card{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+  }
+  img{
+    height: 500px;
+    width: 350px;
+    border-radius: 3px;
+    transition: .5s;
+  }
+  .intro{
+    height: 70px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 240px;
+    background: rgb(27,27,27,.5);
+    color: white;
+  
+    
+  
+  }
+  
+  h3{
+    margin: 10px;
+    font-size: 25px;
+  }
+  h5{
+    margin: 20px;
+    font-size: 15px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  span{
+    font-weight: bold;
+  }
+  .card:hover{
+    cursor: pointer;
+  }
+  .card:hover .intro{
+    height: 220px;
+    bottom: 240px;
+    background: black;
+  }
+  .card:hover h5{
+    opacity: 1;
+    visibility: visible;
+  }
+  .card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+  }
+  
+  

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="itf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Menu </title>
+        <link rel=" stylesheet" href="https://fonts.googleapis.com/ess?family=Roboto|Varela+Round">
+        <link rel=" stylesheet" href="https://fonts.googleapis.com/icon?family-Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https //maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="./menu.js"></script>
+        <link rel="stylesheet" href="./kaz.css">
+        <link rel="stylesheet" href="./menu.css">
+    </head>
+    <body>
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6"><h2>TRAVEL<b>MENU</h2></div>
+                    <div class="col-sm-6">
+                        <div class="btn-group" data-google="buttons">
+                            <label class="btn btn-info active">
+                                <input type="radio" name="status" value="all" checked="cecked"> all
+                            </label>
+                            <label class="btn btn-success">
+                                <input type="radio" name="status" value="active" > 5days
+                            </label>
+                            <label class="btn btn-warning">
+                                <input type="radio" name="status" value="Inactive"> 7days
+                            </label>
+                            <label class="btn btn-danger">
+                                <input type="radio" name="status" value="expired" > 9days
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Company</th>
+                        <th>Travel&nbsp;Period</th>
+                        <th>status</th>
+                        <th>Travel&nbsp;Areas</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-status="active">
+                        <td>1</td>
+                        <td><a href="TTM.com">TTM.com</a></td>
+                        <td>Winter</td>
+                        <td><spam class="label label-success">5days</spam></td>
+                        <td>Bayan_ulgii</td>
+                        <td> <a href="#" class="btn btn-sm manage">3000$</a></td>
+                    </tr>
+                    <tr data-status="Inactive">
+                        <td>2</td>
+                        <td><a href="TTM.com">TTM.net</a></td>
+                        <td>Spring</td>
+                        <td><spam class="label label-warning">7days</spam></td>
+                        <td>Bayan_ulgii</td>
+                        <td> <a href="#" class="btn btn-sm manage">3500$</a></td>
+                    </tr>
+                    <tr data-status="active">
+                        <td>3</td>
+                        <td><a href="TTM.com">TTM.org</a></td>
+                        <td>Summer</td>
+                        <td><spam class="label label-success">5days</spam></td>
+                        <td>Bayan_ulgii</td>
+                        <td> <a href="#" class="btn btn-sm manage">2200$</a></td>
+                    </tr>
+                    <tr data-status="expired">
+                        <td>4</td>
+                        <td><a href="TTM.com">TTM.info</a></td>
+                        <td>Summer</td>
+                        <td><spam class="label label-danger">9days</spam></td>
+                        <td>Bayan_ulgii</td>
+                        <td> <a href="#" class="btn btn-sm manage">3500$</a></td>
+                    </tr>
+                    <tr data-status="Inactive">
+                        <td>5</td>
+                        <td><a href="TTM.com">TTM.net</a></td>
+                        <td>Autumn</td>
+                        <td><spam class="label label-warning">7days</spam></td>
+                        <td>Bayan_ulgii</td>
+                        <td> <a href="#" class="btn btn-sm manage">3000$</a></td>
+                    </tr>
+                    <tr data-status="active">
+                      <td>6</td>
+                      <td><a href="TTM.com">TTM.com</a></td>
+                      <td>Spring</td>
+                      <td><spam class="label label-success">5days</spam></td>
+                      <td>Bayan_ulgii</td>
+                      <td> <a href="#" class="btn btn-sm manage">3000$</a></td>
+                  </tr>
+                  <tr data-status="Inactive">
+                      <td>7</td>
+                      <td><a href="TTM.com">TTM.net</a></td>
+                      <td>Summer</td>
+                      <td><spam class="label label-warning">7days</spam></td>
+                      <td>Bayan_ulgii</td>
+                      <td> <a href="#" class="btn btn-sm manage">2800$</a></td>
+                  </tr>
+                  <tr data-status="active">
+                      <td>8</td>
+                      <td><a href="TTM.com">TTM.org</a></td>
+                      <td>Autumn</td>
+                      <td><spam class="label label-success">5days</spam></td>
+                      <td>Bayan_ulgii</td>
+                      <td> <a href="#" class="btn btn-sm manage">3000$</a></td>
+                  </tr>
+                  <tr data-status="expired">
+                      <td>9</td>
+                      <td><a href="TTM.com">TTM.info</a></td>
+                      <td>Spring</td>
+                      <td><spam class="label label-danger">9days</spam></td>
+                      <td>Bayan_ulgii</td>
+                      <td> <a href="#" class="btn btn-sm manage">4000$</a></td>
+                  </tr>
+                  <tr data-status="Inactive">
+                      <td>10</td>
+                      <td><a href="TTM.com">TTM.net</a></td>
+                      <td>Winter</td>
+                      <td><spam class="label label-warning">7days</spam></td>
+                      <td>Bayan_ulgii</td>
+                      <td> <a href="#" class="btn btn-sm manage">3500$</a></td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+
+       
+
+     
+         <div class="section">
+             <div class="text"><h2>
+               CAR RENTAL SERVICE</h2>
+         
+              <p><h3>Our drivers are highly trained in driving in the city<br>
+                and Mongolian countryside. We take pride in our drivers who <br>
+                will provide not only safe and skilled driving but are friendly<br>
+                and courteous. We provide English speaking drivers and all of them<br>
+             are willing to work on weekend. The price is usually inclusive of additional<br>
+              driver fees, fuel and toll fees. We can supply car rental services daily, monthly<br>
+               or long term period with special offers.<br></h3></p>
+             </div>
+             <a target="_blank"><img src="./transport1.jpg" alt=""></a>
+     
+         </div>
+         <div class="text">
+             
+           
+         <div class="gallery">
+             <a target="_blank" href="./hotel_book.jpg">
+               <img src="./hotel_book.jpg" alt="Cinque Terre" width="600" height="400">
+             </a>
+             <div class="desc"><h3>BOOK HOTEL</h3>
+                 <p>Guaranteed lower rates- All hotel rooms in Mongolia booked<br>
+                    through us are guaranteed to be at a lower rate than the hotel’s own <br>
+                    rack rate. No Cancellation Fee - Any booking made with us can be cancelled <br>
+                              for free up until 3 days prior to your arrival date.<br></p></div></div>
+           </div>
+          
+ 
+           <div class="gallery">
+             <a target="_blank" href="./guide-mongolia1-2.jpg">
+               <img src="guide-mongolia1-2.jpg" alt="Forest" width="600" height="400">
+             </a>
+             <div class="desc1"><h3>TOUR GUIDE & INTERPRETING SERVICE</h3>
+                 <p>Should you travel to Mongolia even for vacation, business or special projects<br>
+                    without a tour guide/ interpreter/ translator? It is better to have one along.<br>
+                    We can arrange skilled tour guide or professional-level translator/interpreter to<br>
+                                      accompany you on designated visits.<br></p></div>
+           </div>
+           <div class="text1">
+             
+           </div>
+           <div class="gallery1">
+             <a target="_blank" href="international-flight1.jpg">
+               <img src="international-flight1.jpg" alt="Cinque Terre" width="600" height="400">
+             </a>
+             <div class="desc2"><h3>INTERNATIONAL FLIGHTS MONGOLIA</h3>
+                 <p>Chinggis Khaan International Airport outside of Ulaanbaatar (located just 18<br>
+                    km to the southwest of Ulaanbaatar) is the only airport in Mongolia that offers<br>
+                     international flights. Direct flights are available from Berlin (German), Moscow<br>
+                              (Russia), Beijing (China), Seoul (Korea), and Tokyo (Japan).<br></p></div></div>
+           </div>
+          
+ 
+           <div class="gallery1">
+             <a target="_blank" href="domestic-flight1.jpg">
+               <img src="domestic-flight1.jpg" alt="Forest" width="600" height="400">
+             </a>
+             <div class="desc2"><h3>DOMESTIC FLIGHT BOOKING​</h3>
+                 <p>Online service of domestic flight booking is not developed very well in<br>
+                   Mongolia, so to save your time and make it easier for you we can help you<br>
+                    to book or buy your domestic flight tickets and send you scanned copies.<br>
+                         Also we will keep informing you with any changes or updates.</p><br></div>
+           </div>
+    </body>
+</html>

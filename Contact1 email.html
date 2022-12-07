@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="./contact email.css">
+    </head>
+    <body>
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>Contact</h3>
+                <input class="name" type="text" id="name" placeholder="Your Name" required>
+                <input class="email" type="email" id="email" placeholder="Email" required>
+                <input class="number" type="phone" id="phone" placeholder="Phone Number" required>
+                <textarea class="msg" id="msg" rows="4" placeholder="How can you help you"></textarea>
+                <button type="submit">Send</button>
+           </form>
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720261.2041029115!2d87.59483791664377!3d48.2546538929735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42b4b482c7e98269%3A0xcad3084c17f9ec63!2sBayan-%C3%96lgii%2C%20Mongolia!5e0!3m2!1sen!2skz!4v1667079319127!5m2!1sen!2skz"
+            width="500" height="520" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       
+           
+         </div>
+         <script src="https://smtpjs.com/v3/smtp.js"></script>
+         <script>
+            const form=document.querySelector('.contact_form');
+            //function to send the message when click on botton send
+            function sendMsg(e){
+             
+              const name=document.querySelector('.name')
+                    email=document.querySelector('.email')
+                    msg=document.querySelector('.msg')
+                e.preventDefult();
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "Altanbyek",
+                    Password : "Altu.02271517",
+                    To : 'jenisbekatlinbek622@gmail.com',
+                    From :  email.value,
+                    Subject : "Contact Form",
+                    Body : msg.value
+                }).then(
+                message => alert(message)
+                );
+                //function send email...
+
+             }
+            
+        //add the event listenner submit
+        form.addEeventlis('submit',sendMsg); 
+        </script>
+    </body>
+</html>
